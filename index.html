@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella Vita Bistro & Pizzeria | Authentic Italian Dining</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#D4AF37',
+              goldHover: '#C59B27',
+              dark: '#0D0D0D',
+              surface: '#1A1A1A',
+              card: '#242424',
+              accent: '#E65100'
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #0D0D0D;
+      color: #E5E7EB;
+    }
+    .glass-nav {
+      background: rgba(13, 13, 13, 0.85);
+      backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-gold selection:text-black">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="#" class="text-2xl sm:text-3xl font-serif font-bold tracking-wider text-white">
+          BELLA VITA <span class="text-brand-gold">.</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#about" class="text-sm uppercase tracking-widest hover:text-brand-gold transition-colors">About</a>
+          <a href="#menu" class="text-sm uppercase tracking-widest hover:text-brand-gold transition-colors">Menu</a>
+          <a href="#reservation" class="text-sm uppercase tracking-widest hover:text-brand-gold transition-colors">Reservations</a>
+          <a href="#contact" class="text-sm uppercase tracking-widest hover:text-brand-gold transition-colors">Contact</a>
+        </div>
+        <div>
+          <a href="#reservation" class="bg-brand-gold hover:bg-brand-goldHover text-black font-semibold px-5 py-2.5 rounded-full text-sm transition-all duration-300 shadow-lg shadow-brand-gold/20 inline-block">
+            Book Table
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat filter brightness-40 transform scale-105" 
+         style="background-image: url('https://zeroinchinteriorsltd.com/wp-content/uploads/2024/09/Interior-Design-for-Restaurants-Creating-the-Perfect-Ambiance.jpg');">
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent"></div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 pt-12">
+      <span class="text-brand-gold font-serif italic text-lg sm:text-xl tracking-widest mb-3 block">Authentic Italian Cuisine</span>
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-serif font-bold text-white tracking-tight leading-tight mb-6">
+        Crafted with Passion, Served with Elegance.
+      </h1>
+      <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+        Experience wood-fired artisan pizzas, handmade pastas, and gourmet burgers prepared daily using imported Italian ingredients and local organic produce.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#menu" class="w-full sm:w-auto bg-brand-gold hover:bg-brand-goldHover text-black font-semibold px-8 py-4 rounded-full text-base transition-all duration-300 shadow-xl shadow-brand-gold/20">
+          Explore Our Menu
+        </a>
+        <a href="#reservation" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-medium px-8 py-4 rounded-full text-base backdrop-blur-md border border-white/20 transition-all duration-300">
+          Reserve a Table
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 bg-brand-surface border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div>
+          <span class="text-brand-gold font-serif italic text-lg tracking-widest block mb-2">Our Heritage</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Traditional Italian Craftsmanship Meets Modern Elegance</h2>
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            At Bella Vita Bistro, we believe that dining is an art form. From our custom wood-fired oven reaching over 450°C to our slow-fermented 72-hour sourdough pizza crusts, every detail is engineered to deliver an unforgettable taste experience.
+          </p>
+          <div class="grid grid-cols-2 gap-6 pt-4 border-t border-white/10">
+            <div>
+              <h3 class="text-2xl font-serif font-bold text-brand-gold">100% Organic</h3>
+              <p class="text-sm text-gray-400 mt-1">Locally sourced produce & imported Italian cheeses.</p>
+            </div>
+            <div>
+              <h3 class="text-2xl font-serif font-bold text-brand-gold">Wood-Fired</h3>
+              <p class="text-sm text-gray-400 mt-1">Authentic Neapolitan baking techniques.</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+            <img src="https://www.indresano.com/blog/wp-content/uploads/2024/10/Food-Photography-979x1024.jpg" alt="Artisan Wood Fired Pizza" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-24 bg-brand-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-gold font-serif italic text-lg tracking-widest block mb-2">Taste The Excellence</span>
+        <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white mb-6">Our Featured Menu</h2>
+        <p class="text-gray-400">Select a category below or tap any item to instantly order via WhatsApp.</p>
+      </div>
+
+      <!-- Menu Items Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Item 1 -->
+        <div class="bg-brand-card rounded-2xl p-6 border border-white/5 hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-4">
+              <img src="https://static.wixstatic.com/media/37143c_d9c2301d56074e9aa7ad42bb662e456c~mv2.jpg/v1/fill/w_568,h_804,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/37143c_d9c2301d56074e9aa7ad42bb662e456c~mv2.jpg" alt="Artisan Pizza" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-bold text-white font-serif">Margherita Supreme</h3>
+              <span class="text-brand-gold font-bold font-serif text-lg">R145</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-6">San Marzano tomato sauce, fresh Fior di Latte mozzarella, basil, and extra virgin olive oil.</p>
+          </div>
+          <button onclick="orderWhatsApp('Margherita Supreme', 'R145')" class="w-full bg-white/5 hover:bg-brand-gold hover:text-black text-white font-medium py-3 rounded-xl border border-white/10 transition-all duration-300 text-sm flex items-center justify-center gap-2">
+            <span>Order via WhatsApp</span>
+          </button>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-brand-card rounded-2xl p-6 border border-white/5 hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-4">
+              <img src="https://thedefineddish.com/wp-content/uploads/2025/07/Smash-Burgers-with-Special-Truffle-Sauce-2-1200x1799.jpg" alt="Truffle Burger" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-bold text-white font-serif">Truffle Smash Burger</h3>
+              <span class="text-brand-gold font-bold font-serif text-lg">R165</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-6">Double Wagyu beef smash patties, black truffle aioli, aged cheddar, and caramelized onions on brioche.</p>
+          </div>
+          <button onclick="orderWhatsApp('Truffle Smash Burger', 'R165')" class="w-full bg-white/5 hover:bg-brand-gold hover:text-black text-white font-medium py-3 rounded-xl border border-white/10 transition-all duration-300 text-sm flex items-center justify-center gap-2">
+            <span>Order via WhatsApp</span>
+          </button>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-brand-card rounded-2xl p-6 border border-white/5 hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-4">
+              <img src="https://www.indresano.com/blog/wp-content/uploads/2024/10/Food-Photography-979x1024.jpg" alt="Wood Fired Diavola" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-bold text-white font-serif">Diavola Pepperoni</h3>
+              <span class="text-brand-gold font-bold font-serif text-lg">R175</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-6">Spicy Italian salami, crushed hot chili flakes, mozzarella, and a drizzle of hot organic honey.</p>
+          </div>
+          <button onclick="orderWhatsApp('Diavola Pepperoni', 'R175')" class="w-full bg-white/5 hover:bg-brand-gold hover:text-black text-white font-medium py-3 rounded-xl border border-white/10 transition-all duration-300 text-sm flex items-center justify-center gap-2">
+            <span>Order via WhatsApp</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section id="reservation" class="py-24 bg-brand-surface relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="bg-brand-card p-8 sm:p-12 rounded-3xl border border-white/10 shadow-2xl">
+        <div class="text-center mb-10">
+          <span class="text-brand-gold font-serif italic text-lg tracking-widest block mb-2">Book Your Table</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">Join Us For An Unforgettable Evening</h2>
+        </div>
+        <form onsubmit="handleReservation(event)" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
+              <input type="text" required placeholder="John Doe" class="w-full bg-brand-dark border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-gold">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Phone Number</label>
+              <input type="tel" required placeholder="+27 82 123 4567" class="w-full bg-brand-dark border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-gold">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Date</label>
+              <input type="date" required class="w-full bg-brand-dark border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-gold">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Guests</label>
+              <select class="w-full bg-brand-dark border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-gold">
+                <option>2 Guests</option>
+                <option>4 Guests</option>
+                <option>6 Guests</option>
+                <option>Large Party (8+)</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="w-full bg-brand-gold hover:bg-brand-goldHover text-black font-semibold py-4 rounded-xl transition-all duration-300 text-base shadow-lg shadow-brand-gold/20">
+            Confirm Reservation
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-brand-dark border-t border-white/10 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="text-xl font-serif font-bold text-white mb-3">BELLA VITA</h3>
+          <p class="text-gray-400 text-sm">Fine Italian dining & wood-fired pizza.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-brand-gold mb-3">Opening Hours</h4>
+          <p class="text-gray-400 text-sm">Mon - Sat: 12:00 PM - 10:00 PM</p>
+          <p class="text-gray-400 text-sm">Sunday: 12:00 PM - 8:00 PM</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-brand-gold mb-3">Contact Us</h4>
+          <p class="text-gray-400 text-sm">123 Main Street, Waterfront</p>
+          <p class="text-gray-400 text-sm">+27 82 000 0000</p>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-8 text-center text-xs text-gray-500">
+        &copy; 2026 Bella Vita Bistro. All rights reserved. Built with passion.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function orderWhatsApp(itemName, price) {
+      const phoneNumber = "27820000000"; // Replace with client's real WhatsApp number
+      const text = encodeURIComponent(`Hi Bella Vita! I would like to order the ${itemName} (${price}).`);
+      window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
+    }
+
+    function handleReservation(event) {
+      event.preventDefault();
+      alert("Thank you! Your table reservation request has been received. We will confirm via SMS shortly.");
+    }
+  </script>
+</body>
+  </html>
+                
